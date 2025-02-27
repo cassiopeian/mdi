@@ -25,6 +25,19 @@ header {
     height: 144px;
     position: relative;
 }
+nav {
+    position: relative;
+}
+nav li {
+    display: inline;
+    list-style: none;
+}
+nav li a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(60, 91, 74);
+    cursor: pointer;
+}
 
 /* FOOTER */
 
