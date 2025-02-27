@@ -1,0 +1,19 @@
+/* GLOBAL */
+
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+    height: -webkit-fill-available;
+}
+* {
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    margin: 0;
+    padding: 0;
+}
