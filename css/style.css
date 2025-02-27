@@ -24,6 +24,9 @@ header {
     display: flex;
     height: 144px;
     position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
 }
 nav {
     position: relative;
