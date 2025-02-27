@@ -25,3 +25,13 @@ header {
     height: 144px;
     position: relative;
 }
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    margin-top: auto;
+    position: relative;
+    background-color: inherit;
+    padding: 40px 30px 10px;
+}
