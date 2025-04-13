@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="red_pdf" data-name="red pdf" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86.97 105.79">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #da6c6c;
+      }
+
+      .cls-2 {
+        fill: #f8e2e2;
+        font-family: K2D-ExtraBold, K2D;
+        font-size: 20px;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        fill: #c10a0a;
+      }
+    </style>
+  </defs>
+  <g id="page">
+    <path class="cls-3" d="M64.79,0H9.89C4.45,0,0,4.45,0,9.89v85.96c0,5.44,4.45,9.89,9.89,9.89h67.19c5.44,0,9.89-4.45,9.89-9.89V22.18L64.79,0Z"/>
+    <path class="cls-1" d="M74.68,22.18c-5.44,0-9.89-4.45-9.89-9.89V0s22.18,22.18,22.18,22.18h-12.29Z"/>
+  </g>
+  <text class="cls-2" transform="translate(23.55 94.25)"><tspan x="0" y="0">PDF</tspan></text>
+  <g id="text_lines" data-name="text lines">
+    <rect class="cls-1" x="12.75" y="40.89" width="61.47" height="2.96" rx="1.01" ry="1.01"/>
+    <rect class="cls-1" x="12.75" y="51.39" width="61.47" height="2.96" rx="1.01" ry="1.01"/>
+    <rect class="cls-1" x="12.75" y="61.89" width="61.47" height="2.96" rx="1.01" ry="1.01"/>
+  </g>
+</svg>
