@@ -1,4 +1,75 @@
-/* GLOBAL */
+/* --------------------------------
+
+TABLE OF CONTENTS 
+
+1. FONTS
+2. GLOBAL
+3. HEADER
+4. HOME PAGE 
+    a. hero section
+    b. services section
+    c. call-to-action section
+    d. quality section
+5. INFO PAGES
+    a. manufacturing materials
+6. CONTACT PAGE
+7. MEDIA QUERIES
+
+-------------------------------- */
+
+/* 1. FONTS */
+
+h1 {
+    font-family: "Bruno Ace", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3rem;
+    color: #74dace;
+    margin: 3rem 0 .5rem 0;
+}
+#hero h1,
+.home h2 {
+    font-family: "Bruno Ace", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+nav li a,
+#hero span,
+.blurb-title,
+h2,
+.flagged-links,
+#special-flag h2,
+aside h3,
+label {
+    font-family: "Jura", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+p {
+    font-family: "Jura", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    color: hsl(240 17% 34% / 1);
+}
+#call-to-action a,
+#quality-download p,
+.home p,
+.text p,
+.text li,
+aside p,
+.alloy,
+.metal,
+input,
+textarea {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* 2. GLOBAL */
 
 html {
     font-size: 16px;
@@ -17,37 +88,696 @@ body {
     margin: 0;
     padding: 0;
 }
-
-/* HEADER */
-
-header {
-    display: flex;
-    height: 144px;
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-}
-nav {
-    position: relative;
-}
-nav li {
-    display: inline;
-    list-style: none;
-}
-nav li a {
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: rgb(60, 91, 74);
-    cursor: pointer;
-}
-
-/* FOOTER */
-
 footer {
     width: 100%;
     margin-top: auto;
     position: relative;
     background-color: inherit;
     padding: 40px 30px 10px;
+}
+footer p {
+    font-size: 1rem;
+}
+
+/* 3. HEADER */
+
+header {
+    display: flex;
+    height: 104px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #242a49;
+    box-shadow: 0px 2px 5px 1px rgba(65, 70, 73, .74);
+    overflow: hidden;
+}
+#logo-wrapper {
+    display: flex;
+    height: 80px;
+    width: 80px;
+    background: #fefefe;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+#logo-wrapper img {
+    height: 45px;
+}
+#hamburger {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 34.5px;
+    width: 41px;
+    cursor: pointer;
+    z-index: 2;
+}
+#hamburger img {
+    position: relative;
+    width: 100%;
+}
+.rotate-top-stent {
+    transform: rotate(45deg);
+    transform-origin: top left;
+    transition: transform 1s linear;
+}
+.hide-middle-stent {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+.rotate-bottom-stent {
+    transform: rotate(-45deg);
+    transform-origin: bottom left;
+    transition: transform 1s linear;
+}
+nav {
+    position: relative;
+}
+#stent-pattern {
+    display: none;
+}
+nav li {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+}
+nav li a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #e3f4e3;
+    padding: 8px;
+    cursor: pointer;
+}
+nav li a:hover {
+    background-color: #353c69;
+}
+
+/* 4. HOME PAGE */
+
+/* hero section */
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: url('../images/test-heart-banner.svg');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-color: #242a49;
+}
+#hero div {
+    width: 60%;
+    padding: 3rem;
+}
+#hero img {
+    width: 40%;
+}
+#hero h1 {
+    font-size: 3rem;
+    color: #74dace;
+    margin: 3rem 0 .5rem 0;
+} 
+#hero span {
+    display: block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    /* color: #77779e; */
+    color: #f0f8ff;
+    padding: 1rem 0 4rem 0;
+}
+
+/* services section */
+
+.come-in {
+    transform: translateY(150px);
+    animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+    animation-duration: 0.6s; /* So they look staggered */
+}
+@keyframes come-in {
+    to { transform: translateY(0); }
+}
+#services-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 5rem 0 0 0;
+}
+.blurb-wrapper {
+    width: 40%;
+}
+.services-image-wrapper {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    box-shadow: -7px -7px 10px 3px #c3c9d9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#design-service-image {
+    background-image: url("https://www.mdimagineering.com/uploads/3/7/8/6/37860287/1169636614_orig.png");
+}
+#manufacturing-service-image {
+    background-image: url("https://www.mdimagineering.com/uploads/3/7/8/6/37860287/published/6546609.jpeg");
+}
+#testing-service-image {
+    background-image: url("https://www.mdimagineering.com/uploads/3/7/8/6/37860287/published/radial-force-testing.jpg");
+}
+#laser-service-image {
+    background-image: url("https://www.mdimagineering.com/uploads/3/7/8/6/37860287/1759501.jpg");
+}
+#fea-service-image {
+    background-image: url("https://www.mdimagineering.com/uploads/3/7/8/6/37860287/6559334.jpg");
+}
+#nitinol-service-image {
+    background-image: url("https://www.mdimagineering.com/uploads/3/7/8/6/37860287/2147496_orig.jpg");
+}
+.blurb-title {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    padding: 0;
+    margin: 1.5rem 0 0 0;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+}
+#special-flag h2,
+.flagged-links {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin: 0;
+    padding: .3rem;
+}
+#special-flag h2 {
+    background-color: #3d4986;
+}
+.flagged-links {
+    text-decoration: none;
+    background-color: #ff8b00;
+}
+.blurb {
+    color: rgb(53, 41, 47);
+    font-size: 1.3rem;
+    margin: 2rem 0 4rem 0;
+}
+
+/* call-to-action section */
+
+#call-to-action {
+    background-color: #434458;
+    padding: 7rem;
+}
+#call-to-action h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #73dace;
+}
+#call-to-action p {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+#call-to-action a {
+    display: inline-block;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 2rem 0 0 0;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #ff8b00;
+}
+#call-to-action a:hover {
+    background-color: #ff7b00;
+}
+
+/* quality section */
+
+#quality-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 2rem;
+    margin: 1.7rem 0;
+}
+#iso-seal {
+    height: 150px;
+}
+#quality-download {
+    display: flex;
+    align-items: end;
+    justify-content: right;
+    text-decoration: none;
+    margin: 2rem;
+    column-gap: 1rem;
+}
+#quality-download p {
+    font-weight: 400;
+    font-size: .9rem;
+    text-align: right;
+    margin: 0;
+}
+#quality-download img {
+    height: 65px;
+}
+
+/* 5. INFO PAGES */
+
+.page-banner {
+    display: block;
+    position: relative;
+    height: 265px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: saturate(2.5);
+}
+#about-banner {
+    background-image: url("https://www.mdimagineering.com/uploads/3/7/8/6/37860287/header_images/1424100249.jpg");
+}
+#design-banner {
+    background-image: url("https://www.mdimagineering.com/uploads/3/7/8/6/37860287/7903175_orig.jpg");
+}
+#fea-banner {
+    background-image: url("https://www.mdimagineering.com/uploads/3/7/8/6/37860287/published/1465734771.jpg");
+}
+#manufacturing-banner {
+    background-image: url("https://www.mdimagineering.com/uploads/3/7/8/6/37860287/5559175_orig.jpeg");
+}
+#laser-banner {
+    background-image: url("https://www.mdimagineering.com/uploads/3/7/8/6/37860287/published/1465736188.jpg");
+}
+#testing-banner {
+    background-image: url("https://www.mdimagineering.com/uploads/3/7/8/6/37860287/published/radial-force-testing.jpg");
+}
+#contact-banner {
+    background-image: url("https://www.mdimagineering.com/uploads/3/7/8/6/37860287/1493579199_orig.png");
+}
+#fea-aside-image,
+#testing-aside-image {
+    /* border: 5px solid #3c4986; */
+    padding: 15px;
+    background-color: #ffffff;
+}
+.color-overlay {
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    background-color: #242a49;
+    opacity: 50%;
+}
+.home,
+.text {
+    margin: 5rem 10rem;
+}
+.home h2 {
+    color: #74dace;
+    font-size: 2.5rem;
+    margin: 0 0 0.5rem 0;
+}
+.text h1 {
+    font-size: 2.5rem;
+    margin: 0 0 0.5rem 0;
+}
+.text h2 {
+    font-weight: 700;
+    color: #1191af;
+    font-size: 1.75rem;
+    margin: 2.5rem 0 0.5rem 0;
+}
+.home p,
+.text p {
+    font-size: 1.15rem;
+    letter-spacing: .02rem;
+    line-height: 1.85rem;
+    margin: 1.7rem 0;
+}
+.text ul {
+    column-count: 2;
+    padding-inline-start: 30px;
+}
+.text li {
+    font-size: 1.15rem;
+    letter-spacing: .02rem;
+    line-height: 1.6rem;
+    list-style: none;
+    color: #484865;
+    margin: 0;
+}
+.text li::before {
+    display: inline-block;
+    width: 10px; 
+    height: 20px;
+    padding: 0 15px 0 0;
+    background-image: url("../images/stent-bulb.svg");
+    background-size: 10px 20px;
+    background-repeat: no-repeat;
+    content:"";
+}
+.text-aside-wrap {
+    display: flex;
+}
+
+.slide-left {
+    transform: translateX(0%) scale(1);
+    transition: all .5s;
+} 
+aside {
+    position: relative;
+    width: 45%;
+    min-width: 250px;
+    height: fit-content;
+    background-color: #484e6c;
+    margin: 10rem 10rem 0 0;
+    transition: all .5s;
+    transform: translate(30%) scale(0.95);
+    left: 100%;
+    opacity: 0;
+}
+aside img {
+    width: 100%;
+}
+aside div {
+    margin: 2rem;
+}
+aside h3 {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #86dfd5;
+    margin: 2.5rem 0 0.5rem 0;
+}
+aside h3 span {
+    font-weight: 400;
+}
+aside p {
+    font-size: 1rem;
+    letter-spacing: .02rem;
+    line-height: 1.6rem;
+    margin: 1.7rem 0;
+    color: aliceblue;
+}
+
+/* manufacturing materials */
+
+.materials {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.materials div {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    column-gap: .5rem;
+    margin: 1rem;
+    width: 40%;
+}
+.alloy,
+.metal {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    padding: .5rem;
+    color: #f5f5f5;
+    border-radius: 4px;
+    height: 3.5rem;
+    width: 3.5rem;
+    font-weight: 500;
+    font-size: .85rem;
+    letter-spacing: 0.05rem;
+}
+.alloy.plus,
+.metal.plus {
+    font-size: .7rem;
+}
+.alloy {
+    background-color: #9a1874;
+}
+.metal {
+    background-color: #5b68aa;
+}
+.materials p {
+    font-weight: 600;
+    margin: 0;
+}
+
+/* 6. CONTACT PAGE */
+
+#contact-form-wrapper {
+    margin: 6rem auto;
+    width: 70%;
+}
+#airplane-banner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: fit-content;
+    padding: 3% 0;
+    background: #242a49;
+    border-radius: 8px 8px 0 0;
+}
+#airplane-banner img {
+    width: 50%;
+}
+form.contact-form {
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
+    border-radius: 0 0 8px 8px;
+    padding: 2rem;
+}
+#form-flex-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#form-flex-wrap .form-item {
+    width: 40%;
+}
+.form-item {
+    margin: 2rem;
+}
+label {
+    display: block;
+    margin: 0 0 5px 0;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.red-asterisk {
+    color: #ee0a30;
+}
+input,
+textarea {
+    font-size: 1.15rem;
+    letter-spacing: .02rem;
+    line-height: 1.6rem;
+    width: 100%;
+    padding: 8px;
+}
+input {
+    display: block;
+}
+textarea {
+    resize: none;
+    height: 250px;
+}
+#submit {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #ff8b00;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+}
+#submit:hover {
+    background-color: #ff7b00;
+}
+#google-map {
+    display: block;
+    margin: 2rem auto;
+    width: 70%;
+    border-radius: 8px;
+}
+
+/* 7. MEDIA QUERIES */
+
+@media only screen and (max-width: 1140px) {
+    
+    /* HEADER */
+
+    #logo-wrapper {
+        z-index: 8;
+    }
+    #hamburger {
+        display: flex;
+    }
+    nav {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        background: #242a49;
+    }
+    #stent-pattern {
+        display: block;
+        height: 100%;
+        width: 60px;
+        background-image: url("../images/stent-pattern.svg");
+        background-repeat: repeat;
+        background-size: 50%;
+    }
+    nav ul {
+        position: relative;
+        padding: 0;
+        z-index: 7;
+        margin: 8rem 1rem 1rem 1rem;
+    }
+    nav li {
+        display: block;
+    }
+    nav li a {
+        display: inline-block;
+    }
+    
+}
+
+@media only screen and (max-width: 1008px) {
+
+    /* CONTACT */
+
+    #form-flex-wrap .form-item {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+
+    /* HERO */
+
+    #hero div {
+        width: 100%;
+        padding: 2rem 2rem 7rem 2rem;
+    }
+    #hero h1 {
+        margin: 2rem auto;
+        font-size: 2.3rem;
+        text-align: center;
+    }
+    #hero span {
+        display: block;
+        font-size: 1.2rem;
+        font-style: normal;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    #hero p {
+        text-align: center;
+        margin: 2rem auto;
+        padding-bottom: 7rem;
+    }
+
+    /* SERVICES */
+
+    .blurb-wrapper {
+        width: 100%;
+    }
+
+    /* CTA */
+
+    #call-to-action {
+        padding: 3rem;
+    }
+    #call-to-action a {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* QUALITY */
+
+    #quality-wrapper {
+        display: block;
+    }
+    #iso-seal {
+        float: right;
+        margin: 0 0 .5rem 2rem;
+    }
+    #quality-download {
+        margin: 0;
+        flex-direction: row-reverse;
+        justify-content: left;
+    }
+    #quality-download p {
+        text-align: left;
+    }
+
+    /* MAIN */
+
+    .text-aside-wrap {
+        flex-direction: column;
+    }
+    .home,
+    .text {
+        margin: 5rem 2rem 2rem 2rem;
+    }
+    .text h1 {
+        font-size: 2rem;
+    }
+    .text ul {
+        column-count: 1;
+    }
+    aside {
+        width: 100%;
+        margin: 0 auto;
+    }
+    /* #fea-aside-image, #testing-aside-image {
+        border: none;
+    } */
+
+    /* manufacturing materials */
+
+    .materials {
+        justify-content: space-between;
+    }
+    .materials div {
+        flex-direction: column;
+        width: 36%;
+    }
+    .materials p {
+        margin: .5rem 0;
+    }
+
+    /* CONTACT */
+
+    form.contact-form {
+        padding: 1rem;
+    }
+    #contact-form-wrapper {
+        width: 80%;
+    }
+    .form-item {
+        margin: 1rem .5rem;
+    }
+    #google-map {
+        width: 100%;
+        border-radius: 0;
+    }
 }
