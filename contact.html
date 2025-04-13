@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="cache-control" content="no-store" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#77779e" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDI | Contact</title>
+    <link type="image/png" rel="icon" href="./images/mdi-favicon.png" />
+    <link type="text/css" rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Jura:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <a href="./index.html" id="logo-wrapper">
+            <img src="https://www.mdimagineering.com/uploads/3/7/8/6/37860287/1460207928.png" alt="Text-based company logo that says MDI, above the words Medical Device Imagineering." />
+        </a>
+        <div id="hamburger">
+            <img id="top-stent" src="./images/hamburger-stent.svg" alt="Stent illustration" />
+            <img id="middle-stent" src="./images/hamburger-stent.svg" alt="Stent illustration" />
+            <img id="bottom-stent" src="./images/hamburger-stent.svg" alt="Stent illustration" />
+        </div>
+        <nav>
+            <div id="stent-pattern"></div>
+            <ul>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./about-us.html">About Us</a>
+                </li>
+                <li>
+                    <a href="./design.html">Design</a>
+                </li>
+                <li>
+                    <a href="./manufacturing.html">Manufacturing</a>
+                </li>
+                <li>
+                    <a href="./testing-services.html">Testing</a>
+                </li>
+                <li>
+                    <a href="./laser.html">Laser</a>
+                </li>
+                <li>
+                    <a href="./fea.html">FEA</a>
+                </li>
+                <li>
+                    <a href="./index.html#quality">Quality</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="page-banner" id="contact-banner">
+            <div class="color-overlay"></div>
+        </div>
+        <section class="text">
+            <h1>Contact Us</h1>
+            <p>Have a question? Looking for a quote? We'd love to hear from you! Please use the contact form, below, to send us a message.</p>
+        </section>
+        <div id="contact-form-wrapper">
+            <div id="airplane-banner">
+                <img src="./images/contact-airplane.svg" alt="Illustration of a paper airplane with a trailing dotted line.">
+            </div>
+            <form action="" method="get" class="contact-form">
+                <div id="form-flex-wrap">
+                    <div class="form-item">
+                      <label for="first-name">First Name:<span class="red-asterisk">*</span> </label>
+                      <input type="text" name="first-name" id="first-name" required />
+                    </div>
+                    <div class="form-item">
+                        <label for="last-name">Last Name:<span class="red-asterisk">*</span> </label>
+                        <input type="text" name="last-name" id="last-name" required />
+                      </div>
+                    <div class="form-item">
+                      <label for="email">Email:<span class="red-asterisk">*</span> </label>
+                      <input type="email" name="email" id="email" required />
+                    </div>
+                    <div class="form-item">
+                        <label for="phone">Phone:<span class="red-asterisk">*</span> </label>
+                        <input type="phone" name="phone" id="phone" required />
+                      </div>
+                </div>
+                <div class="form-item">
+                    <label for="message">Message:<span class="red-asterisk">*</span> </label>
+                    <textarea name="message" id="message" placeholder="Enter your message here" required></textarea>
+                </div>
+                <div class="form-item">
+                  <input type="submit" value="Submit" id="submit" />
+                </div>
+            </form>
+        </div>
+          <iframe id="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.9431448979285!2d-74.50760199999999!3d40.63113579999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3bd7efacbe3df%3A0x77f7b659d41e292c!2sMedical%20Device%20Imagineering!5e0!3m2!1sen!2sus!4v1742443750188!5m2!1sen!2sus" width="800" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
+    <footer>
+        <p id="copyright">&copy; 2025 Medical Device Imagineering. All rights reserved.</p>
+    </footer>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
