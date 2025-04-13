@@ -4,46 +4,161 @@
     <meta charset="UTF-8">
     <meta http-equiv="cache-control" content="no-store" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#77779e" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MDI | Home</title>
+    <link type="image/png" rel="icon" href="./images/mdi-favicon.png" />
     <link type="text/css" rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Jura:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
-        <div id="logo-wrapper">
+        <a href="./index.html" id="logo-wrapper">
             <img src="https://www.mdimagineering.com/uploads/3/7/8/6/37860287/1460207928.png" alt="Text-based company logo that says MDI, above the words Medical Device Imagineering." />
+        </a>
+        <div id="hamburger">
+            <img id="top-stent" src="./images/hamburger-stent.svg" alt="Stent illustration" />
+            <img id="middle-stent" src="./images/hamburger-stent.svg" alt="Stent illustration" />
+            <img id="bottom-stent" src="./images/hamburger-stent.svg" alt="Stent illustration" />
         </div>
         <nav>
+            <div id="stent-pattern"></div>
             <ul>
                 <li>
                     <a href="./index.html">Home</a>
                 </li>
                 <li>
-                    <a href="#">About Us</a>
+                    <a href="./about-us.html">About Us</a>
                 </li>
                 <li>
-                    <a href="#">Design</a>
+                    <a href="./design.html">Design</a>
                 </li>
                 <li>
-                    <a href="#">Manufacturing</a>
+                    <a href="./manufacturing.html">Manufacturing</a>
                 </li>
                 <li>
-                    <a href="#">Laser</a>
+                    <a href="./testing-services.html">Testing</a>
                 </li>
                 <li>
-                    <a href="#">Testing Services</a>
+                    <a href="./laser.html">Laser</a>
                 </li>
                 <li>
-                    <a href="#">Quality</a>
+                    <a href="./fea.html">FEA</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="./index.html#quality">Quality</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
+    <main>
+        <section id="hero">
+            <div>
+                <h1>Medical Device Imagineering</h1>
+                <span>Where ideas come to life</span>
+            </div>
+        </section>
+        <section class="home" id="services">
+            <h2>Services</h2>
+             <p>Innovation is at our core. MDI synergizes design, engineering, and manufacturing, to rapidly materialize your vision of a medical device.</p>
+            <div id="services-wrapper">
+                <!-- Design -->
+                <div class="blurb-wrapper">
+                    <a href="./design.html" class="services-image-wrapper" id="design-service-image"></a>
+                    <div class="blurb-title orange-flag">
+                        <img src="./images/orange-flag.svg" alt="" />
+                        <a href="./design.html" class="flagged-links">Design</a>
+                    </div>
+                    <div class="blurb">
+                        <p>Let MDI help you turn your concept into a reality</p>
+                    </div>
+                </div>
+                <!-- Manufacturing -->
+                <div class="blurb-wrapper">
+                    <a href="./manufacturing.html" class="services-image-wrapper" id="manufacturing-service-image"></a>
+                    <div class="blurb-title orange-flag">
+                        <img src="./images/orange-flag.svg" alt="" />
+                        <a href="./manufacturing.html" class="flagged-links">Manufacturing</a>
+                    </div>
+                    <div class="blurb">
+                        <p>From prototype to production, we've got you covered</p>
+                    </div>
+                </div>
+                <!-- Testing -->
+                <div class="blurb-wrapper">
+                    <a href="./testing-services.html" class="services-image-wrapper" id="testing-service-image"></a>
+                    <div class="blurb-title orange-flag">
+                        <img src="./images/orange-flag.svg" alt="" />
+                        <a href="./testing-services.html" class="flagged-links">Testing</a>
+                    </div>
+                    <div class="blurb">
+                        <p>Our lab is equipped to perform a wide array of industry-standard assessments</p>
+                    </div>
+                </div>
+                <!-- Laser -->
+                <div class="blurb-wrapper">
+                    <a href="./laser.html" class="services-image-wrapper" id="laser-service-image"></a>
+                    <div class="blurb-title orange-flag">
+                        <img src="./images/orange-flag.svg" alt="" />
+                        <a href="./laser.html" class="flagged-links">Laser</a>
+                    </div>
+                    <div class="blurb">
+                        <p>With femto, fiber, and YAG laser capabilities, we offer lightning-fast turnaround times</p>
+                    </div>
+                </div>
+                <!-- FEA -->
+                <div class="blurb-wrapper">
+                    <a href="./fea.html" class="services-image-wrapper" id="fea-service-image"></a>
+                    <div class="blurb-title orange-flag">
+                        <img src="./images/orange-flag.svg" alt="" />
+                        <a href="./fea.html" class="flagged-links">FEA</a>
+                    </div>
+                    <div class="blurb">
+                        <p>We make complex finite element analysis runs look easy</p>
+                    </div>
+                </div>
+                <!-- Nitinol -->
+                <div class="blurb-wrapper">
+                    <div class="services-image-wrapper" id="nitinol-service-image"></div>
+                    <div class="blurb-title" id="special-flag">
+                        <img src="./images/blue-flag.svg" alt="" />
+                        <h2>Nitinol</h2>
+                    </div>
+                    <div class="blurb">
+                        <p>Whether your device is wire-formed or laser-cut, MDI is the nitinol expert of choice</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="call-to-action">
+            <h2>Let's Connect</h2>
+            <p>With your imagination and our engineering, we can develop cutting-edge medical devices. Contact us, today, to discuss a partnership with MDI, or to request a quote for services.</p>
+            <a href="./contact.html">Contact Us</a>
+        </section>
+        <section class="home" id="quality">
+            <h2>Quality</h2>
+            <div id="quality-wrapper">
+                <img id="iso-seal" src="./images/mdi-iso-seal.svg" alt="Gold seal that says MDI ISO 13485.">
+                <p>Medical Device Imagineering LLC has been assessed and certified as meeting the requirements of ISO 13485, in the design, testing, prototyping, and manufacturing of medical devices.</p>
+            </div>
+            <a href="https://www.mdimagineering.com/uploads/3/7/8/6/37860287/orion_registrar_inc._certificate.pdf" target="_blank" rel="noopener noreferrer" id="quality-download" title="Download file: orion_registrar_inc._certificate.pdf">
+                <div>
+                    <p>Download File</p>
+                    <p>orion_registrar_inc._certificate.pdf</p>
+                </div>
+                <img src="./images/red-outline-pdf-icon.svg" alt="PDF icon depicting a red page with a bent corner." />
+            </a>
+        </section>
+    </main>
     <footer>
         <p id="copyright">&copy; 2025 Medical Device Imagineering. All rights reserved.</p>
     </footer>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
