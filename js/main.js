@@ -206,3 +206,8 @@ $(window).on('load', function() {
         $('aside').addClass('slide-left').dequeue()
     });
 });
+
+// ---------- FOOTER ----------
+
+// Set copyright year
+$('#copyright-year').html(new Date().getFullYear());
