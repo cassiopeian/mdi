@@ -657,6 +657,11 @@ textarea {
         display: inline-block;
     }
     
+    /* SERVICES */
+
+    .blurb-wrapper {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 1008px) {
@@ -693,12 +698,6 @@ textarea {
         text-align: center;
         margin: 2rem auto;
         padding-bottom: 7rem;
-    }
-
-    /* SERVICES */
-
-    .blurb-wrapper {
-        width: 100%;
     }
 
     /* CTA */
