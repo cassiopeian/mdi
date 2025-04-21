@@ -205,7 +205,6 @@ nav li a:hover {
     display: block;
     font-size: 2rem;
     text-transform: uppercase;
-    /* color: #77779e; */
     color: #f0f8ff;
     padding: 1rem 0 4rem 0;
 }
@@ -389,7 +388,6 @@ nav li a:hover {
 }
 #fea-aside-image,
 #testing-aside-image {
-    /* border: 5px solid #3c4986; */
     padding: 15px;
     background-color: #ffffff;
 }
@@ -760,9 +758,6 @@ textarea {
         width: 100%;
         margin: 0 auto;
     }
-    /* #fea-aside-image, #testing-aside-image {
-        border: none;
-    } */
 
     /* manufacturing materials */
 
