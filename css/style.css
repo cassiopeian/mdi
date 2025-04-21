@@ -401,14 +401,16 @@ nav li a:hover {
     background-color: #242a49;
     opacity: 50%;
 }
-.home,
-.text {
+.home {
     margin: 5rem 10rem;
 }
 .home h2 {
     color: #74dace;
     font-size: 2.5rem;
     margin: 0 0 0.5rem 0;
+}
+.text { 
+    flex-grow: 2;
 }
 .text h1 {
     font-size: 2.5rem;
@@ -451,6 +453,9 @@ nav li a:hover {
 }
 .text-aside-wrap {
     display: flex;
+    justify-content: space-between;
+    column-gap: 100px;
+    margin: 5rem 10rem;
 }
 
 .slide-left {
@@ -459,11 +464,11 @@ nav li a:hover {
 } 
 aside {
     position: relative;
-    width: 45%;
-    min-width: 250px;
+    flex-grow: 1;
+    min-width: 310px;
     height: fit-content;
     background-color: #484e6c;
-    margin: 10rem 10rem 0 0;
+    margin: 5rem 0 0 0;
     transition: all .5s;
     transform: translate(30%) scale(0.95);
     left: 100%;
@@ -735,6 +740,7 @@ textarea {
 
     .text-aside-wrap {
         flex-direction: column;
+        margin: 0;
     }
     .home,
     .text {
