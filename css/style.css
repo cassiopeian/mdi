@@ -783,7 +783,8 @@ textarea {
         padding: 1rem;
     }
     #contact-form-wrapper {
-        width: 80%;
+        width: 85%;
+        margin: 5rem auto;
     }
     .form-item {
         margin: 1rem .5rem;
