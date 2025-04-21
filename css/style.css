@@ -244,6 +244,9 @@ nav li a:hover {
 .services-image-wrapper:hover {
     filter: brightness(0.85);
 }
+#nitinol-service-image:hover {
+    filter: unset;
+}
 #design-service-image {
     background-image: url("https://www.mdimagineering.com/uploads/3/7/8/6/37860287/1169636614_orig.png");
 }
