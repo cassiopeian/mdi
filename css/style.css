@@ -545,6 +545,9 @@ aside p {
 
 /* 6. CONTACT PAGE */
 
+.contact-page.text {
+    margin: 5rem 10rem;
+}
 #contact-form-wrapper {
     margin: 6rem auto;
     width: 70%;
@@ -743,7 +746,8 @@ textarea {
         margin: 0;
     }
     .home,
-    .text {
+    .text,
+    .contact-page.text {
         margin: 5rem 2rem 2rem 2rem;
     }
     .text h1 {
